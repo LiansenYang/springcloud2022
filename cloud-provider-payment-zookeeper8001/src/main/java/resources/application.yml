@@ -1,0 +1,11 @@
+#8001表示注册到zookeeper服务的支付服务提供者端口号
+server:
+  port: 8001
+#服务别名----注册zookeeper到注册中心名称
+spring:
+  application:
+    name: cloud-provider-zk-payment
+  cloud:
+    zookeeper:
+      connect-string: 192.168.0.106:2181,192.168.0.107:2181,192.168.0.108:2181
+
