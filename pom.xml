@@ -24,6 +24,11 @@
       <module>cloud-provider-hystrix-payment8001</module>
       <module>cloud-consumer-feign-hystrix-order80</module>
       <module>cloud-consumer-hystrix-dashboard9001</module>
+      <module>cloud-gateway-gateway9527</module>
+      <module>cloud-config-center-3344</module>
+      <module>cloud-config-client3355</module>
+      <module>cloud-config-client3366</module>
+    <module>cloud-stream-rabbitmq-provider8801</module>
   </modules>
   <packaging>pom</packaging>
   <!-- 统一管理jar包版本 -->
@@ -52,7 +57,7 @@
     </site>
   </distributionManagement>
 
-  <!-- 子模块继承之后，提供作用：锁定版本 + 子module不用谢groupId和version -->
+  <!-- 子模块继承之后，提供作用：锁定版本 + 子module不用写groupId和version -->
   <dependencyManagement>
     <dependencies>
       <!--spring boot 2.2.2-->
