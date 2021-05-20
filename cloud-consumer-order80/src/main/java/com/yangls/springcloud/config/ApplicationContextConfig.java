@@ -14,6 +14,7 @@ import org.springframework.web.client.RestTemplate;
 public class ApplicationContextConfig {
 
     @Bean
+    //为什么要加上@LoadBalanced?因为集群之后不知道是应该找集群的那一台机器了，所以需要加上rabbion的LoadBalanced
     @LoadBalanced
     public RestTemplate getRestTemplate(){
         return new RestTemplate();
